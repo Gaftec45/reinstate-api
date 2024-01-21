@@ -1,0 +1,394 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  nav{
+    background: #999;
+    width: 1265px;
+    margin: 0 20px;
+    padding: 10px;
+  }
+  nav ul{
+    display: inline-block
+  }
+  nav li{
+    float: left;
+    margin-left: 60px;
+    font-size: 30px;
+    list-style: none;
+  }
+  nav a{
+    text-decoration: none;
+    color: #fff;
+  }
+  #des{
+      margin-top: 200px;
+      margin-bottom: 100px;
+     /* background: red;*/
+      background-color: hsla(0, 0%, 0%, 0.5);
+      width: 590px;
+      height: 350px;
+      border-radius: 20px;
+      padding: 20px;
+      float: right;
+      color: #fff;
+  }
+  
+  #des h1{
+      font-size: 60px;
+  }
+  
+  #des p{
+      font-size: 30px;
+      text-transform: capitalize;
+  }
+  
+  .banner {
+      width: 1265px;
+      padding: 20px;
+      display: inline-block;
+    background-image: url('img/bgb.jpg');
+    background-size: cover;
+  }
+  
+  section {
+    margin: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    bottom: 0;
+    margin: 0 20px;
+    width: 1265px;
+  }
+  
+  .social-icons {
+    display: block;
+    gap: 100px;
+    margin: 100px;
+  }
+  
+  .social-icons a {
+    font-size: 34px; /* Adjust the size as needed */
+    color: #fff; /* Set the icon color */
+      text-decoration: none;
+      text-align: center;
+  }
+  
+  #tools-benefits-solutions{
+      background: #eee ;
+      display: inline-block;
+      width: 1265px;
+      text-align: center;
+      font-size: 38px;
+      padding: 10px;
+      border-radius: 10px;
+  }
+  
+  #tools-benefits-solutions .ban img{
+      width: 550px;
+      border-radius: 20px;
+  }
+  
+  #tools-benefits-solutions .ban{
+      float: right;
+  }
+  
+  #tools-benefits-solutions .tools{
+      width: 600px;
+      float: left;
+      margin: 35px 20px 0 20px;
+      padding: 10px;
+  }
+  
+  
+  .tools p{
+      font-size: 20px;
+      text-align: left
+  }
+  
+  /* .tools ul{
+      
+  } */
+  
+  .tools li{
+      list-style: none;
+      font-size: 20px;
+      text-align: left;
+  }
+  
+  .tools button{
+      margin: 10px;
+      width: 300px;
+      height: 50px;
+      cursor: pointer;
+  }
+  
+  #steps-to-take{
+      width: 1265px;
+      background: #eee;
+      display: inline-block;
+      border-radius: 10px;
+  }
+  
+  #steps-to-take .step{
+      float: right;
+      width: 550px;
+      margin-left: 40px;
+      padding: 10px;
+  }
+  
+  .step h2{
+      font-size: 60px;
+      text-align: center;
+  }
+  
+  .step p{
+      font-size: 30px;
+  }
+  
+  .step li{
+      font-size: 18px;
+  }
+  
+  #steps-to-take .ban2{
+      float: left;
+  }
+  
+  #steps-to-take .ban2 img{
+      width: 600px;
+  }
+  
+  #customer-reviews {
+      background: #eee;
+      color: #000;
+      padding: 20px;
+      text-align: center;
+      width: 1265px;
+      border-radius: 10px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .testimonial {
+    float: left;
+    width: 380px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 10px;    
+    height: 210px;
+    color: black;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .checked{
+      color: orange;
+  }
+  
+  .testimonial img {
+    float: left;
+    width: 200px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 100%;
+  }
+  
+  #purchasing-package{
+      display: inline-block;
+      background: #eee;
+      text-align: center;
+      width: 1265px;
+      border-radius: 10px;
+  }
+  
+  .columns {
+    float: left;
+    width: 415px;
+    padding: 10px;
+      margin-bottom: 20px;
+  }
+  
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 2px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .price  .grey {
+    /* background-color: ; */
+    font-size: 20px;
+  }
+  
+  .button {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .price .discounted-price {
+        text-decoration: line-through;
+        color: #999;
+        margin-right: 10px;
+      }
+  
+  .price .discounted-price,
+  .price .final-price {
+        font-weight: bold;
+      }
+  
+  .price .final-price {
+        color: #4CAF50;
+      }
+  
+  #purchasing-package p{
+      font-size: 20px;
+      margin-top: 15px;
+  }
+  
+      #getting-started {
+        background-color: #f5f5f5;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 8px;
+        width: 1265px;
+      }
+  
+    #getting-started  h2 {
+        color: #333;
+        text-align: center;
+      }
+  
+    #getting-started  p {
+        color: #666;
+        line-height: 1.5;
+      }
+  
+    #getting-started  ol {
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+  
+   #getting-started   li {
+        color: #333;
+        margin-bottom: 10px;
+      }
+  
+  #contact-support{
+        background-color: #f5f5f5;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 8px;
+      display: inline-block;
+      width: 1265px;
+  }
+  
+  #contact-support h2{
+      text-align: center;
+      font-size: 35px;
+  }
+  
+  #contact-support .fad{
+      float: left;
+      width: 600px;
+  }
+  
+  #contact-support .myForm{
+      float: right;
+      width: 500px;
+      background: #000;
+      padding: 10px;
+      margin-left: 100px;
+      text-align: center;
+      color: #fff;
+      border-radius: 10px;
+  }
+  
+  .myForm input{
+      width: 400px;
+      height: 35px;
+      border: none;
+  }
+  
+  .myForm textarea{
+      width: 400px;
+      min-height: 100px;
+      border: none;
+  }
+  .myForm button{
+      width: 400px;
+      height: 40px;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    .banner, #des, #purchasing-package, #tools-benefits-solutions, #steps-to-take, #customer-reviews, .columns, .testimonial {
+      width: 100%;
+    }
+      
+      #des h1{
+          font-size: 40px;
+      }
+  
+      #des p{
+      font-size: 20px;
+  }
+      #tools-benefits-solutions .ban img{
+      width: 100%;
+      border-radius: 20px;
+      margin-top: 20px;
+  }
+  
+  #tools-benefits-solutions .ban{
+      float: right;
+  }
+  
+  #tools-benefits-solutions .tools{
+      width: 100%;
+      float: left;
+      margin: 15px 10px 0 10px;
+      padding: 4px;
+  }
+      
+  }
