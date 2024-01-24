@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+</head>
+
+<body>
+        <%- include('partials/header') %> 
+
+    <div class="purchase-container">
+        <h1>Complete Your Payment</h1>
+
+        <h3>Please send your payment of $25 to the following cryptocurrency address:</h3>
+
+        <h2>Select Cryptocurrency:</h2>
+        <div class="crypto-options">
+            <label class="crypto-option">
+                <input type="radio" name="cryptoType" value="bitcoin" checked onchange="displayWalletAddress()">
+                <img src="/assets/img/bitcoin-cryptocurrency.svg" alt=""> 
+            </label>
+            <label class="crypto-option">
+                <input type="radio" name="cryptoType" value="usdt" onchange="displayWalletAddress()">
+                <img src="/assets/img/tether-cryptocurrency.svg"/>
+            </label>
+            <label class="crypto-option">
+                <input type="radio" name="cryptoType" value="ethereum" onchange="displayWalletAddress()">
+                <img src="/assets/img/ethereum-cryptocurrency.svg" alt="">
+            </label>
+            <label class="crypto-option">
+                <input type="radio" name="cryptoType" value="binance" onchange="displayWalletAddress()">
+                <img src="/assets/img/binance-coin-cryptocurrency.svg" alt="">
+            </label>
+            <!-- Add more options as needed -->
+        </div>
+
+        <!-- Wallet addresses -->
+        <div id="bitcoinWallet" class="wallet-address">
+            <img src="/assets/img/BTC.jpg" class="cryptoo" alt=""> <br>
+            <img src="/assets/img/bitcoin-cryptocurrency.svg" alt="">
+            <p class="pp">0x634a280594df1a25285060ae2a27b5cd09e54851
+            <button class="copy-btn" onclick="copyToClipboard('bitcoinWallet')"><i class="far fa-copy"></i></button></p>
+        </div>
+        
+
+        <div id="usdtWallet" class="wallet-address" style="display: none;">
+            <img src="/assets/img/USDT.jpg" class="cryptoo"/> <br>
+            <img src="/assets/img/tether-cryptocurrency.svg"/> <p>TNSY8zcvdrmYpCzLBn5nkMBoaFopkSz1Rs
+            <button class="copy-btn" onclick="copyToClipboard('usdtWallet')"><i class="far fa-copy"></i></button></p>
+        </div>
+
+        <div id="ethereumWallet" class="wallet-address" style="display: none;">
+            <img src="/assets/img/ETH.jpg" class="cryptoo" alt="">  <br>
+             <img src="/assets/img/ethereum-cryptocurrency.svg" alt=""> <p>0x6f4c619d455b6f5d77cac9428b1bb14016b9a442
+            <button class="copy-btn" onclick="copyToClipboard('ethereumWallet')"><i class="far fa-copy"></i></button></p>
+        </div>
+
+        <div id="binanceWallet" class="wallet-address" style="display: none;">
+            <img src="/assets/img/BNB.jpg" class="cryptoo" alt="" /> <br>
+           <img src="/assets/img/binance-coin-cryptocurrency.svg" alt=""> <p> 0x6f4c619d455b6f5d77cac9428b1bb14016b9a442
+            <button class="copy-btn" onclick="copyToClipboard('binanceWallet')"><i class="far fa-copy"></i></button></p>
+        </div>        
+
+        <div id="countdown">
+        </div>
+        <div class="notification">
+          <i>  Note: Do not refresh the page. Your transaction will be verified manually.</i>
+        </div>
+        <button id="paymentMade" style="margin-top: 20px; cursor: pointer;">I Have Made the Payment</button>
+    </div>
+
+    <footer>
+        <span id="dse">
+            <p>&copy; 2024 UTech Agent</p>
+        </span>
+    </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const countdownEl = document.getElementById('countdown');
+                let time = 5 * 60;
+
+                const countdownTimer = setInterval(function() {
+                    let minutes = Math.floor(time / 60);
+                    let seconds = time % 60;
+
+                    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+                    countdownEl.innerHTML = `${minutes}:${seconds}`;
+                    time--;
+
+                    if (time < 0) {
+                        clearInterval(countdownTimer);
+                        countdownEl.innerHTML = "We're waiting for your Payment";
+                        document.getElementById('paymentMade').disabled = true;
+                    }
+                }, 1000);
+
+                document.getElementById('paymentMade').addEventListener('click', function() {
+                    // Handle the action after payment confirmation
+                    alert('Payment confirmation received.');
+                });
+            });
+                    function copyToClipboard() {
+                const el = document.createElement('textarea');
+                el.value = '1BoatSLRHtKNngkdXEeobR76b53LETtpyT';
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand('copy');
+                document.body.removeChild(el);
+
+                // Optional: Show an alert or change button text/content
+                alert('Address copied to clipboard!');
+            }
+
+     /*   function displayWalletAddress() {
+            const selectedCrypto = document.querySelector('input[name="cryptoType"]:checked').value;
+
+            // Hide all wallet addresses
+            document.getElementById('bitcoinWallet').style.display = 'none';
+            document.getElementById('usdtWallet').style.display = 'none';
+            document.getElementById('ethereumWallet').style.display = 'none';
+            document.getElementById('binanceWallet').style.display = 'none';
+            // Add more lines for other wallets if needed
+
+            // Display the selected wallet address
+            document.getElementById(`${selectedCrypto}Wallet`).style.display = 'block';
+        } */
+
+        function displayWalletAddress() {
+            const selectedCrypto = document.querySelector('input[name="cryptoType"]:checked').value;
+
+            // Hide all wallet addresses
+            document.getElementById('bitcoinWallet').style.display = 'none';
+            document.getElementById('usdtWallet').style.display = 'none';
+            document.getElementById('ethereumWallet').style.display = 'none';
+            document.getElementById('binanceWallet').style.display = 'none';
+
+            // Display the selected wallet address
+            document.getElementById(`${selectedCrypto}Wallet`).style.display = 'block';
+        }
+
+        function copyToClipboard(walletType) {
+            const walletAddress = document.getElementById(`${walletType}`).textContent;
+            const el = document.createElement('textarea');
+            el.value = walletAddress;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+
+            alert(`${walletType.toUpperCase()} address copied to clipboard!`);
+        }
+        </script>
+    </body>
+</html>

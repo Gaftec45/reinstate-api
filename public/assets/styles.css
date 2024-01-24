@@ -3,15 +3,15 @@ body {
   }
   
   header {
-    background-color: #333;
+    background-color: #ffffff;
     color: #fff;
     text-align: center;
     padding: 20px;
   }
   nav{
-    background: #999;
-    width: 1265px;
-    margin: 0 20px;
+    background: #000000;
+    width: 1300px;
+    margin: 20px auto;
     padding: 10px;
   }
   nav ul{
@@ -28,16 +28,38 @@ body {
     color: #fff;
   }
   #des{
-      margin-top: 200px;
-      margin-bottom: 100px;
+      margin-top: 170px;
+      /* margin-bottom: 100px; */
      /* background: red;*/
-      background-color: hsla(0, 0%, 0%, 0.5);
+      background-color: hsla(0, 0%, 0%, 0.302);
       width: 590px;
       height: 350px;
       border-radius: 20px;
       padding: 20px;
       float: right;
       color: #fff;
+  }
+
+  .whyus{
+    margin-top: 550px;
+    width: 100%;
+    height: 150px;
+    background: #00000051;
+    padding: 10px;
+    color: #fff;
+    border-radius: 0 100px 100px 0;
+  }
+  .why{
+    width: 170px;
+    /* background-color: #00000078; */
+    float: left;
+    color: #fff;
+    margin: 0 30px;
+    padding: 5px;
+  }
+
+  .why h2{
+    color: #fff;
   }
   
   #des h1{
@@ -50,24 +72,26 @@ body {
   }
   
   .banner {
-      width: 1265px;
+      width: 1300px;
       padding: 20px;
       display: inline-block;
-    background-image: url('img/bgb.jpg');
+    background-image: url('img/VAB.png');
     background-size: cover;
   }
   
-  section {
+section {
     margin: 20px;
-  }
+  } 
   
   footer {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 10px;
     bottom: 0;
-    margin: 0 20px;
-    width: 1265px;
+    left: 0;
+    margin: 10px auto;
+    width: 1300px;
+    text-align: center;
   }
   
   .social-icons {
@@ -86,9 +110,10 @@ body {
   #tools-benefits-solutions{
       background: #eee ;
       display: inline-block;
-      width: 1265px;
+      width: 1300px;
       text-align: center;
       font-size: 38px;
+      /* margin: 10px auto; */
       padding: 10px;
       border-radius: 10px;
   }
@@ -133,7 +158,8 @@ body {
   }
   
   #steps-to-take{
-      width: 1265px;
+      width: 1300px;
+      /* margin: 10px auto; */
       background: #eee;
       display: inline-block;
       border-radius: 10px;
@@ -169,10 +195,11 @@ body {
   
   #customer-reviews {
       background: #eee;
+      /* margin: 10px auto; */
       color: #000;
       padding: 20px;
       text-align: center;
-      width: 1265px;
+      width: 1300px;
       border-radius: 10px;
   }
   
@@ -189,7 +216,7 @@ body {
     border-radius: 5px;
     padding: 16px;
     margin: 10px;    
-    height: 210px;
+    height: 220px;
     color: black;
   }
   
@@ -216,13 +243,13 @@ body {
       display: inline-block;
       background: #eee;
       text-align: center;
-      width: 1265px;
+      width: 1300px;
       border-radius: 10px;
   }
   
   .columns {
     float: left;
-    width: 415px;
+    width: 420px;
     padding: 10px;
       margin-bottom: 20px;
   }
@@ -292,7 +319,7 @@ body {
         padding: 20px;
         margin: 20px;
         border-radius: 8px;
-        width: 1265px;
+        width: 1300px;
       }
   
     #getting-started  h2 {
@@ -321,7 +348,7 @@ body {
         margin: 20px;
         border-radius: 8px;
       display: inline-block;
-      width: 1265px;
+      width: 1300px;
   }
   
   #contact-support h2{
@@ -337,7 +364,7 @@ body {
   #contact-support .myForm{
       float: right;
       width: 500px;
-      background: #000;
+      background: #0e1228;
       padding: 10px;
       margin-left: 100px;
       text-align: center;
@@ -346,20 +373,218 @@ body {
   }
   
   .myForm input{
-      width: 400px;
+      width: 100%;
       height: 35px;
       border: none;
   }
   
   .myForm textarea{
-      width: 400px;
+      width: 100%;
       min-height: 100px;
       border: none;
   }
   .myForm button{
-      width: 400px;
+      width: 100%;
       height: 40px;
   }
+  .fab.fa-whatsapp {
+    font-size: 50px;
+    color: #25D366;
+}
+.fab.fa-telegram-plane {
+  font-size: 50px;
+  color: #0088cc; /* Telegram's brand color */
+}
+
+  .purchase-container {
+    text-align: center;
+    width: 1300px;
+    background: #eee;
+    margin: 20px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.cryptoo{
+  width: 400px;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+#paymentMade{
+  width: 300px;
+  height: 40px;
+  border: none;
+  background: #000000;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 20px;
+
+}
+.wallet-address {
+    margin: 20px 0;
+    font-size: 1.2em;
+    word-break: break-all; /* Ensures long addresses wrap */
+}
+
+.notification {
+    color: red;
+    font-size: 0.9em;
+    margin: 5px;
+}
+
+#countdown {
+    font-size: 2em;
+    margin: 20px 0;
+    background: #ffffff;
+    width: 200px;
+    display: inline-block;
+    color: #000;
+    padding: 10px;
+    border-radius: 40px;
+    /* height: 50px; */
+    text-align: center;
+}
+
+.copy-btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #212121;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.crypto-options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.crypto-option {
+  margin-right: 20px;
+}
+
+#countdown {
+  font-size: 1em;
+  margin: 20px 0;
+}
+
+.wallet-address {
+  margin: 20px 0;
+  font-size: 1.2em;
+  word-break: break-all;
+}
+/* header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+} */
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+::placeholder {
+  color: #aaa;
+}
+
+ header {
+  /* background-color: #333; */
+  color: #000000;
+  text-align: center;
+  padding: 1em;
+} 
+
+.main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.team-member img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
   
   
   @media only screen and (max-width: 600px) {

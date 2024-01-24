@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    </head>
+    
+    <body>
+        <%- include('partials/header') %>
+
+        <p>Please fill the form below with your details before we continue</p>
+
+    <form id="userDetailsForm">
+        <label for="fullName">First Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="fullName">Last Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button><a href="/new/"></a>Continue</button>
+    </form>
+    <footer>
+        <span id="dse">
+            <p>&copy; 2024 UTech Agent</p>
+        </span>
+    </footer>
+
+</body>
+</html>
