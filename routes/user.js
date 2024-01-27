@@ -12,4 +12,14 @@ router.get('/about', (req, res)=>{
     res.render('about')
 })
 
+router.get('/package', (req, res)=>{
+    res.render('price')
+})
+
+router.get('/conta', (req, res)=>{
+    res.render('send')
+})
+
+
+
 module.exports = router;
