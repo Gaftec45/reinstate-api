@@ -246,6 +246,7 @@ section {
   #tools-benefits-solutions .ban img{
       width: 550px;
       border-radius: 20px;
+      height: auto;
   }
   
   #tools-benefits-solutions .ban{
