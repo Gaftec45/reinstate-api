@@ -167,7 +167,7 @@ section {
   background-color: #eee;
   width: 1280px;
   border-radius: 100px 0 100px 0;
-  height: 600px;
+  height: auto;
   padding: 20px;
 }
 .bbb{
@@ -685,7 +685,7 @@ input, textarea {
 }
 
 button {
-  background-color: #007bff;
+  background-color: #000000;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -695,7 +695,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #3a3a3a;
 }
 
 ::placeholder {
