@@ -3,7 +3,7 @@ body {
   }
   
   header {
-    background-color: #ffffff;
+    background-color: #da3838;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -398,7 +398,7 @@ section {
       margin-bottom: 20px;
   }
   
-  .price {
+  .price, .price1 {
     list-style-type: none;
     border: 1px solid #eee;
     margin: 0;
@@ -743,8 +743,124 @@ p {
 }
   
   
-  @media only screen and (max-width: 600px) {
-    .banner, #des, #purchasing-package, #tools-benefits-solutions, #steps-to-take, #customer-reviews, .columns, .testimonial {
+  @media only screen and (max-width: 750px) {
+    nav{
+      width: 100%;
+    }
+    #des{
+      width: 100%;
+      height: auto;
+    }
+    .banner{
+      width: 100%;
+      padding: 5px;
+    }
+    .whyus{
+      height: 200px;
+      padding: 5px;
+      border-radius: 0;
+    }
+
+    .why{
+      width: 100px;
+      margin: 15px;
+    }
+    #tools-benefits-solutions{
+      width: 100%;
+      font-size: 27px;
+      display: block;
+    }
+    #tools-benefits-solutions .tools{
+      width: auto;
+      float: none;
+      margin: 8px;
+    }
+    #tools-benefits-solutions .ban{
+      float: none;
+    }
+    #tools-benefits-solutions .ban img{
+      width: 100%;
+      border-radius: 10px;
+    }
+    #steps-to-take {
+      width: 100%;
+      height: auto;
+      display: block;
+      padding: 5px;
+      /* margin: 0; */
+    }
+    #steps-to-take .step{
+      width: auto;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+  }
+    #steps-to-take .awe{
+      width: 100%;
+      float: none;
+      padding: 6px;
+      height: auto;
+      margin: 10px auto;
+    }
+    #customer-reviews{
+      width: 100%;
+      padding: 10px;
+    }
+    #customer-reviews .testimonial{
+      width: 100%;
+      height: auto;
+      margin: 5px auto;
+      padding: 8px;
+      float: none;
+    }
+    #purchasing-package {
+      display: block;
+      width: 100%;
+    }
+    #purchasing-package .columns {
+      float: none;
+      width: auto;
+    }
+    #purchasing-package .columns .price1{
+      display: none;
+    }
+    #purchasing-package .columns .price{
+      font-size: 25px;
+    }
+    #getting-started {
+      width: 100%;
+      /* margin: 5px; */
+      padding: 8px;
+      display: block;
+    }
+    #getting-started .how {
+      width: 382px;
+      margin: 20px;
+      height: auto;
+    }
+    #getting-started .how .bt{
+      width: 100%;
+    }
+    #contact-support {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+    #contact-support .fad{
+      float: none;
+      width: auto;
+      margin: 10px 0;
+      height: auto;
+    }
+    #contact-support .myForm{
+      float: none;
+      width: auto;
+      margin: 10px auto;
+    }
+    footer {
+      width: 100%;
+    }
+    /* .banner, #des, #purchasing-package, #tools-benefits-solutions, #steps-to-take, #customer-reviews, .columns, .testimonial {
       width: 100%;
     }
       
@@ -770,6 +886,6 @@ p {
       float: left;
       margin: 15px 10px 0 10px;
       padding: 4px;
-  }
+  } */
       
   }
