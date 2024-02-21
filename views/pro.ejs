@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <!-- Google tag (gtag.js) -->
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-J5CJ3158VG"></script>
           <script>
@@ -81,7 +82,7 @@
         <div class="notification">
           <i>  Note: Do not refresh the page. Your transaction will be verified manually.</i>
         </div>
-        <button id="paymentMade" style="margin-top: 20px; cursor: pointer;">I Have Made the Payment</button>
+        <button id="paymentMade" style="margin-top: 20px; cursor: pointer;">Payment Made</button>
     </div>
 
     <footer>
@@ -126,20 +127,6 @@
                 // Optional: Show an alert or change button text/content
                 alert('Address copied to clipboard!');
             }
-
-     /*   function displayWalletAddress() {
-            const selectedCrypto = document.querySelector('input[name="cryptoType"]:checked').value;
-
-            // Hide all wallet addresses
-            document.getElementById('bitcoinWallet').style.display = 'none';
-            document.getElementById('usdtWallet').style.display = 'none';
-            document.getElementById('ethereumWallet').style.display = 'none';
-            document.getElementById('binanceWallet').style.display = 'none';
-            // Add more lines for other wallets if needed
-
-            // Display the selected wallet address
-            document.getElementById(`${selectedCrypto}Wallet`).style.display = 'block';
-        } */
 
         function displayWalletAddress() {
             const selectedCrypto = document.querySelector('input[name="cryptoType"]:checked').value;
